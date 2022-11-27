@@ -1,31 +1,27 @@
 body 
-    width: 1000px
+    width: auto
+
     font-family 'Inter', sans-serif
     background-color: hsl(36, 100%, 99%)
-    // display: flex
-    justify-content: center
-    align-items: center
-    overflow-x: hidden
-    // margin: 30px 30px 30px 30px
-   
+
     
-.header
+.body 
     margin: 50px
-    display inline-block
-    position: relative
-    width: 600px
-    // margin-bottom: 50px
+    max-width: 1400px
+    // max-height: 100px
+    justify-content: center
 
-.menu 
-    position: absolute
-    right: 0px
-    top: 10px  
-
+.header
+    margin: 20px
+    display: flex
+    justify-content: space-between
+    width: auto
+    
 .menu li 
-    display: inline
+    display: inline-block
     font-size: 15px
     font-weight: 400
-    margin: 20px 
+    margin: 5px 
     cursor: pointer
     transition: all .2s linear
     &:hover
@@ -43,8 +39,14 @@ main
     display: inline-block
 
 .img-lego
-    width: 600px
-    height: 300px    
+    width: auto
+    height: 300px  
+
+// texte com grid
+
+.grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
 
 //footer
 
@@ -70,6 +72,6 @@ main
 
 .fa-brands:hover
     width: 40px
-    color: rgb(199, 142, 36)
+    color: hsl(35, 77%, 62%)
     font-size: 1.7rem
     border-color: #000
