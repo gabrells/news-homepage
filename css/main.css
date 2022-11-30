@@ -1,8 +1,9 @@
 body {
+  font-family: 'Inter Tight', sans-serif;
   width: auto;
   background-color: #fffdfa;
 }
-.body {
+.app {
   margin: 50px auto;
   max-width: 900px;
   max-height: 700px;
@@ -26,6 +27,9 @@ body {
   color: #e9ab53;
   font-size: 16px;
 }
+p {
+  font-size: 8px;
+}
 .grid {
   display: grid;
   grid-gap: 10px;
@@ -39,7 +43,7 @@ body {
   height: 200px;
 }
 .grupo-2 {
-  grid-column: 3;
+  grid-column: 2/span 3;
   grid-row: 1/span 2;
   background-color: #00001a;
   height: 400px;
@@ -65,19 +69,48 @@ body {
   font-size: 0.5rem;
 }
 .grupo-3 {
-  grid-row: 2;
-}
-.grupo-4 {
   grid-column: 1;
   grid-row: 2;
+  max-width: 200px;
+}
+.grupo-4 {
+  grid-column: 2;
+  grid-row: 2;
+  max-width: 250px;
+  position: relative;
+  left: -220px;
+}
+button {
+  background-color: #f15e50;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
 }
 .grupo-5 {
-  grid-column: 1/span 3;
-  grid-row: 3;
   height: 250px;
+  max-width: 250px;
+}
+.grupo-5 p,
+.retro {
+  grid-column: 1;
+  grid-row: 3;
+}
+.laptop {
+  grid-column: 2;
+  grid-row: 3;
+}
+.gaming {
+  grid-column: 3;
+  grid-row: 3;
 }
 .img-grid {
   width: 70px;
+  float: left;
+  margin-right: 10px;
+}
+h4 {
+  font-size: 2rem;
+  color: #c5c6ce;
 }
 .footer {
   text-align: center;
