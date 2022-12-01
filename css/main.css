@@ -28,19 +28,23 @@ body {
   font-size: 16px;
 }
 p {
-  font-size: 8px;
+  font-size: 0.85rem;
+  color: #c5c6ce;
+  font-weight: 400;
+  margin-top: 0px;
 }
 .grid {
   display: grid;
-  grid-gap: 10px;
-  padding: 10px;
+  grid-gap: 15px;
+  padding: 5px;
   margin: 0px;
+  transition: all 0.2s linear;
 }
 .grupo-1 {
   grid-column: 1/span 2;
   grid-row: 1;
   width: auto;
-  height: 200px;
+  height: 250px;
 }
 .grupo-2 {
   grid-column: 2/span 3;
@@ -48,49 +52,63 @@ p {
   background-color: #00001a;
   height: 400px;
   color: #fff;
-  max-width: 300px;
+  max-width: auto;
+  padding: 1rem;
 }
 .grupo-2 h2 {
   color: #e9ab53;
   font-size: 3rem;
-  margin: 1rem;
   font-weight: 700;
+  margin: 0px;
 }
 .grupo-2 hr {
-  margin: 1rem;
+  margin: 1.5rem 0rem;
 }
 .grupo-2 h3 {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0px;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 700;
 }
-.grupo-2 p {
-  margin: 1.2rem;
-  font-size: 0.5rem;
+.grupo-2 h3:hover {
+  color: #e9ab53;
 }
 .grupo-3 {
   grid-column: 1;
   grid-row: 2;
-  max-width: 200px;
+  max-width: 250px;
+  font-size: 2rem;
+  position: relative;
+  top: -40px;
 }
 .grupo-4 {
   grid-column: 2;
   grid-row: 2;
-  max-width: 250px;
+  width: 280px;
   position: relative;
-  left: -220px;
+  left: -300px;
 }
 button {
   background-color: #f15e50;
   color: #fff;
   border: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 5px;
   text-transform: uppercase;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  transition: all 0.2s linear;
+}
+button:hover {
+  background-color: #00001a;
+  font-size: 0.9rem;
+  letter-spacing: 6px;
 }
 .grupo-5 {
   height: 250px;
   max-width: 250px;
 }
-.grupo-5 p,
 .retro {
   grid-column: 1;
   grid-row: 3;
