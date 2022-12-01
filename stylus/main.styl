@@ -4,13 +4,12 @@ body
     background-color: hsl(36, 100%, 99%)
 
 .app 
-    margin: 50px auto
+    margin: 10px auto
     max-width: 900px
     max-height: 700px
     justify-content: center   
 
 .header
-    margin: 20px
     display: flex
     justify-content: space-between
     width: auto
@@ -19,7 +18,9 @@ body
     display: inline-block
     font-size: 15px
     font-weight: 400
-    margin: 5px 
+    margin:  0px 5px 
+    position: relative
+    top: 20px
     cursor: pointer
     transition: all .2s linear
     &:hover
@@ -30,7 +31,7 @@ p
     font-size: .85rem
     color: hsl(233, 8%, 79%)
     font-weight: 400    
-    margin-top: 0px
+    margin: 0px
     
 // teste com grid
 
@@ -54,7 +55,7 @@ p
     background-color: hsl(240, 100%, 5%)
     height 400px
     color: white
-    max-width: auto
+    width: 250px
     padding: 1rem
     
 .grupo-2 h2 
@@ -68,19 +69,23 @@ p
 
 .grupo-2 h3 
     margin-top: 1rem
-    margin-bottom: 0px
+    margin-bottom: .5rem
     font-size: 1.2rem
     font-weight: 700
+    cursor: pointer
     &:hover
         color: hsl(35, 77%, 62%)
 
 .grupo-3
     grid-column: 1
     grid-row: 2
-    max-width: 250px
-    font-size: 2rem
+    height: 200px
+    max-width: 300px
+    font-size: 2.2rem
+    font-weight: bold
+    font-weight: 700
     position: relative
-    top: -40px
+    top: -55px
 
 .grupo-4
     grid-column: 2
@@ -97,8 +102,9 @@ button
     font-weight: 700
     letter-spacing: 5px
     text-transform: uppercase
-    margin-top: 1rem
+    margin-top: 2rem
     padding: .85rem 1rem
+    cursor: pointer
     transition: all .2s linear
     &:hover
         background-color: hsl(240, 100%, 5%)
@@ -107,8 +113,9 @@ button
         
 
 .grupo-5 
-    height 250px
-    max-width: 250px
+    height 120px
+    max-width: 300px
+    position: relative
 
 .retro
     grid-column: 1
@@ -117,26 +124,42 @@ button
 .laptop
     grid-column: 2
     grid-row: 3
+    left: -300px
 
 .gaming
     grid-column: 3
     grid-row: 3
+    left: -300px
+    width: 300px
 
 .img-grid
-    width: 70px  
+    width: 90px  
     float: left
     margin-right: 10px
+
+.conteudo-g5
+    display: flex
+    flex-direction: column
 
 h4
     font-size: 2rem
     color: hsl(233, 8%, 79%)
+    margin: 0px
+
+h5 
+    font-size: 1rem
+    margin: .9rem 0
+    cursor: pointer
+    &:hover
+        color: hsl(5, 85%, 63%)
+
 
 //footer
 
 .footer 
     text-align:center
     padding-bottom: 10px
-    margin: 50px 
+    margin: 30px 
    
 .fa-brands 
     width: 30px
