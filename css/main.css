@@ -9,7 +9,7 @@ body {
   max-height: 700px;
   justify-content: center;
 }
-.header {
+.grade-top {
   display: flex;
   justify-content: space-between;
   width: auto;
@@ -176,4 +176,58 @@ h5:hover {
   color: #e9ab53;
   font-size: 1.7rem;
   border-color: #000;
+}
+@media only screen and (max-width: 450px) {
+  body {
+    overflow: auto;
+  }
+  p {
+    font-size: 17px;
+  }
+  .grid {
+    display: block;
+    align-items: center;
+  }
+  .grupo-1 {
+    width: 390px;
+    position: relative;
+  }
+  .grupo-2 {
+    position: relative;
+    top: 400px;
+    width: auto;
+  }
+  .grupo-3 {
+    position: relative;
+    top: -450px;
+    max-width: 400px;
+  }
+  .grupo-3 h2 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1;
+  }
+  .grupo-4 {
+    width: 350px;
+    position: relative;
+    left: 0px;
+    top: -480px;
+  }
+  .grupo-5 {
+    display: inline;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    margin: 20px;
+    width: 400px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .img-grid {
+    width: 100px;
+  }
+  .footer {
+    margin-top: 40px;
+  }
 }
