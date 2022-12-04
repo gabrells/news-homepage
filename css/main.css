@@ -1,7 +1,8 @@
 body {
   font-family: 'Inter Tight', sans-serif;
   width: auto;
-  background-color: #fffdfa;
+  background-color: #f8f1e8;
+  box-sizing: border-box;
 }
 .app {
   margin: 10px auto;
@@ -43,7 +44,7 @@ body {
 }
 p {
   font-size: 0.85rem;
-  color: #c5c6ce;
+  color: #808189;
   font-weight: 400;
   margin: 0px;
 }
@@ -77,11 +78,12 @@ p {
 }
 .grupo-2 hr {
   margin: 1.5rem 0rem;
+  border: 0.1px solid #808189;
 }
 .grupo-2 h3 {
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
 }
