@@ -7,7 +7,8 @@ body
     margin: 10px auto
     max-width: 900px
     max-height: 700px
-    justify-content: center   
+    justify-content: center
+   
 
 .grade-top
     display: flex
@@ -24,6 +25,9 @@ body
     color: hsl(240, 100%, 5%) 
     font-size: 1rem
     font-weight: 400
+    &:hover
+        color: hsl(35, 77%, 62%)
+        font-size: 16px
 .menu li 
     display: inline-block  
     margin:  0px 5px 
@@ -32,9 +36,7 @@ body
     left: 320px
     cursor: pointer
     transition: all .2s linear
-    &:hover
-        color: hsl(35, 77%, 62%)
-        font-size: 16px
+    
 
 
 p 
@@ -214,19 +216,23 @@ h5
         position: relative
         left: -250px
         max-height: 30px
-        
     }
-    .menu-mobile li { 
+    // .menu-mobile ul {
+    // margin-top: 3rem    
+    // }
+    .menu-mobile ul li { 
         list-style: none
-        line-height: 2rem    
+        line-height: 2rem
+        margin-top: 1.5rem    
         
     }
     .menu-mobile a {
         text-decoration: none
         color:hsl(240, 100%, 5%)
-        font-size: 1rem
-        font-weight: 700
-        padding: 1rem 
+        font-size: 1.5rem
+        font-weight: 400
+        margin-top: 30px
+        padding: 1rem
     }
     .menu-mobile a:hover {
         color: hsl(35, 77%, 62%)
@@ -235,16 +241,16 @@ h5
         width: 300px
         height: 100%
         position: fixed
-        left: -300px  
+        left: 3000px
         background-color: rgb(254, 254, 254) 
         transition: right 2s ease-in-out; 
+        z-index: 1
     }
     .menuLateral.open {
-        left: 0
-        tran    
+        left: 165px
+        
     }
     .menuLateral.close {
-        position: fixed
         left: -300px      
     }
     .btnClose {
@@ -275,18 +281,18 @@ h5
         position: relative
         top: -450px
         max-width: 400px   
-        }
+    }
     .grupo-3 h2 {
         font-weight: 900
         font-size: 50px
         line-height: 1
-        }
+    }
     .grupo-4{
         width: 350px
         position: relative
         left: 0px
         top: -480px
-        }
+    }
     .grupo-5 {
         display: inline
         position: relative
@@ -294,19 +300,28 @@ h5
         left: 0px
         margin: 20px
         width: 400px
-        }
+     }
     h5  {
         font-size: 20px
-        }
+    }
     .img-grid {
         width: 100px
-        }
+    }
 
     .footer {
         margin-top: 40px
-        }
-   
-        
+        }  
+    .mascara {
+        position: fixed
+        size: fill
+        display: none
+        height: 100%
+        background-color: #00001A
+        opacity: 60%
+        height: 235vh
+        width: 176vh
+        z-index: 1
+    }     
 }
 
 

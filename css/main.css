@@ -28,6 +28,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
 }
+.menu a:hover {
+  color: #e9ab53;
+  font-size: 16px;
+}
 .menu li {
   display: inline-block;
   margin: 0px 5px;
@@ -36,10 +40,6 @@ body {
   left: 320px;
   cursor: pointer;
   transition: all 0.2s linear;
-}
-.menu li:hover {
-  color: #e9ab53;
-  font-size: 16px;
 }
 p {
   font-size: 0.85rem;
@@ -215,15 +215,17 @@ h5:hover {
     left: -250px;
     max-height: 30px;
   }
-  .menu-mobile li {
+  .menu-mobile ul li {
     list-style: none;
     line-height: 2rem;
+    margin-top: 1.5rem;
   }
   .menu-mobile a {
     text-decoration: none;
     color: #00001a;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 30px;
     padding: 1rem;
   }
   .menu-mobile a:hover {
@@ -233,16 +235,15 @@ h5:hover {
     width: 300px;
     height: 100%;
     position: fixed;
-    left: -300px;
+    left: 3000px;
     background-color: #fefefe;
     transition: right 2s ease-in-out;
+    z-index: 1;
   }
   .menuLateral.open {
-    left: 0;
-tran
+    left: 165px;
   }
   .menuLateral.close {
-    position: fixed;
     left: -300px;
   }
   .btnClose {
@@ -300,5 +301,16 @@ tran
   }
   .footer {
     margin-top: 40px;
+  }
+  .mascara {
+    position: fixed;
+    size: fill;
+    display: none;
+    height: 100%;
+    background-color: #00001a;
+    opacity: 60%;
+    height: 235vh;
+    width: 176vh;
+    z-index: 1;
   }
 }
