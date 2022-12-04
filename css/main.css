@@ -14,13 +14,26 @@ body {
   justify-content: space-between;
   width: auto;
 }
+.btnOpen {
+  visibility: hidden;
+}
+.menu-mobile {
+  max-width: 10px;
+  max-height: 50px;
+  visibility: hidden;
+}
+.menu a {
+  text-decoration: none;
+  color: #00001a;
+  font-size: 1rem;
+  font-weight: 400;
+}
 .menu li {
   display: inline-block;
-  font-size: 15px;
-  font-weight: 400;
   margin: 0px 5px;
   position: relative;
   top: 20px;
+  left: 320px;
   cursor: pointer;
   transition: all 0.2s linear;
 }
@@ -181,8 +194,66 @@ h5:hover {
   body {
     overflow: auto;
   }
-  p {
-    font-size: 17px;
+  .menu {
+    visibility: hidden;
+    position: relative;
+    max-width: 100px;
+    max-height: 30px;
+    left: -250px;
+  }
+  .btnOpen {
+    visibility: visible;
+    font-size: 2.5rem;
+    font-stretch: ultra-expanded;
+    position: relative;
+    left: 60px;
+    top: 15px;
+  }
+  .menu-mobile {
+    visibility: visible;
+    position: relative;
+    left: -250px;
+    max-height: 30px;
+  }
+  .menu-mobile li {
+    list-style: none;
+    line-height: 2rem;
+  }
+  .menu-mobile a {
+    text-decoration: none;
+    color: #00001a;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+  }
+  .menu-mobile a:hover {
+    color: #e9ab53;
+  }
+  .menuLateral {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    left: -300px;
+    background-color: #fefefe;
+    transition: right 2s ease-in-out;
+  }
+  .menuLateral.open {
+    left: 0;
+tran
+  }
+  .menuLateral.close {
+    position: fixed;
+    left: -300px;
+  }
+  .btnClose {
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    left: 200px;
+    top: 15px;
+  }
+  .btnMove.gira {
+    transform: rotate(90deg);
   }
   .grid {
     display: block;

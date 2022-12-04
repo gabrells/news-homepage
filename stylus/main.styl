@@ -13,19 +13,29 @@ body
     display: flex
     justify-content: space-between
     width: auto
-    
-.menu li 
-    display: inline-block
-    font-size: 15px
+.btnOpen
+    visibility: hidden
+.menu-mobile 
+    max-width: 10px
+    max-height: 50px
+    visibility: hidden
+.menu a  
+    text-decoration: none
+    color: hsl(240, 100%, 5%) 
+    font-size: 1rem
     font-weight: 400
+.menu li 
+    display: inline-block  
     margin:  0px 5px 
     position: relative
     top: 20px
+    left: 320px
     cursor: pointer
     transition: all .2s linear
     &:hover
         color: hsl(35, 77%, 62%)
         font-size: 16px
+
 
 p 
     font-size: .85rem
@@ -153,7 +163,6 @@ h5
     &:hover
         color: hsl(5, 85%, 63%)
 
-
 //footer
 
 .footer 
@@ -183,10 +192,72 @@ h5
 @media only screen and (max-width: 450px) {
     body {
         overflow: auto
-    } 
-    p {
-        font-size: 17px
+    }  
+    .menu {
+        visibility: hidden
+        position: relative
+        max-width: 100px
+        max-height: 30px
+        left: -250px
+        
     }
+    .btnOpen {
+    visibility: visible
+    font-size: 2.5rem
+    font-stretch: ultra-expanded
+    position: relative
+    left: 60px
+    top: 15px   
+    }
+    .menu-mobile {
+        visibility: visible
+        position: relative
+        left: -250px
+        max-height: 30px
+        
+    }
+    .menu-mobile li { 
+        list-style: none
+        line-height: 2rem    
+        
+    }
+    .menu-mobile a {
+        text-decoration: none
+        color:hsl(240, 100%, 5%)
+        font-size: 1rem
+        font-weight: 700
+        padding: 1rem 
+    }
+    .menu-mobile a:hover {
+        color: hsl(35, 77%, 62%)
+    }
+    .menuLateral {
+        width: 300px
+        height: 100%
+        position: fixed
+        left: -300px  
+        background-color: rgb(254, 254, 254) 
+        transition: right 2s ease-in-out; 
+    }
+    .menuLateral.open {
+        left: 0
+        tran    
+    }
+    .menuLateral.close {
+        position: fixed
+        left: -300px      
+    }
+    .btnClose {
+        font-size: 3rem
+        font-weight: bold
+        position: relative
+        left: 200px
+        top: 15px
+    }
+    .btnMove.gira {
+        transform: rotate(90deg)
+    }
+    
     .grid {
         display: block
         align-items: center
@@ -237,6 +308,7 @@ h5
    
         
 }
+
 
 
         

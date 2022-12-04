@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap" rel="stylesheet">
   <link rel="styledheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | News homepage</title>
 
@@ -22,17 +27,35 @@
   <div class="app">
     <header>
 <body>
-  <div class="app">
     <header>
+      <div class="app">
       <div class="grade-top">
         <h1><img src="./assets/images/logo.svg"></h1>
-        <ul class="menu">
-          <li>Home</li>
-          <li>News</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
+        <div>
+        <nav class="menu">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="btnOpen"><i class="fa-solid fa-bars btn btnMove"></i></div>
+      <div class="menu-mobile">
+        <nav class="menuLateral">
+          <i class="fa-solid fa-xmark btnClose btn btnMove"></i>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+        </div>
       </div>
     </header>
     <main>
@@ -130,9 +153,12 @@
 
         </div>
       
-        <script src="https://kit.fontawesome.com/2a56b62252.js" crossorigin="anonymous"></script>
+        
         
       </footer>
 </div>
+<script src="https://kit.fontawesome.com/2a56b62252.js" crossorigin="anonymous"></script> 
+<script src="./JS/main.js"></script>
 </body>
+
 </html>
