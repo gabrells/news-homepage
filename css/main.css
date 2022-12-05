@@ -28,6 +28,7 @@ body {
   color: #00001a;
   font-size: 1rem;
   font-weight: 400;
+  transition: all 0.2s linear;
 }
 .menu a:hover {
   color: #e9ab53;
@@ -86,6 +87,7 @@ p {
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 .grupo-2 h3:hover {
   color: #e9ab53;
@@ -123,8 +125,6 @@ button {
 }
 button:hover {
   background-color: #00001a;
-  font-size: 0.9rem;
-  letter-spacing: 6px;
 }
 .grupo-5 {
   height: 120px;
@@ -164,6 +164,7 @@ h5 {
   font-size: 1rem;
   margin: 0.9rem 0;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 h5:hover {
   color: #f15e50;
